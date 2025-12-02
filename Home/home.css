@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.home-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #e9f0f5;
+  
+}
+
+
+/* Intro Section */
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+  font-style: bold;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #555;
+}
+.element {
+  font-size: 3rem;
+  font-style: bold;
+  color:#1e293b ;
+  animation: fadeScaleUp 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeScaleUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* Lumps & Fines Cards */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  font-style: bold;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Info Section */
+.info-section {
+  padding: 40px 20px;
+  background-color: #e9f0f5;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+/* Info Cards Grid */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.03);
+}
+
+.info-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .info-card {
+    text-align: center;
+  }
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.info-card {
+  animation: fadeUp 0.8s ease-in-out;
+}

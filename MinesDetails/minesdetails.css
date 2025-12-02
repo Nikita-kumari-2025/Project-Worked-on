@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mines-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Filter Section === */
+.filter-controls {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+  background-color: #e9f0f5;
+  padding: 20px;
+  border: 1px solid #b6d4f0;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+
+
+.filter-controls label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.filter-controls input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* === Table Styling === */
+.mines-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.mines-table th,
+.mines-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.mines-table th {
+  background-color: #f4f4f4;
+}
+
+/* === Action Buttons (Save/Delete) === */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.action-buttons button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-buttons .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.action-buttons .save-btn:hover {
+  background-color: #218838;
+}
+
+.action-buttons .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+  }
+
+  .filter-controls {
+    width: 100%;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+
+  .button {
+  margin-top: 15px;
+  background-color: #0e48a5;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #57b7f3;
+}
+}

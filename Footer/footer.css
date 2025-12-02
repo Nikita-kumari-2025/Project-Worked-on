@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.footers {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-top: 30vh;
+  background-color: #0e48a5;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
